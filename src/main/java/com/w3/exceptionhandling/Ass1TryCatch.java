@@ -1,13 +1,18 @@
 package com.w3.exceptionhandling;
 
+import com.w3.gcd.GcdOfTwoNumbers;
+
 public class Ass1TryCatch {
     public static int dividedNumber(int dividend, int divisor) {
-        if (divisor == 0){
+        if (divisor == 0) {
             throw new ArithmeticException("Cannot divide the given number by zero ");
         }
+        GcdOfTwoNumbers obj = new GcdOfTwoNumbers();
+        obj.gcdOftwoNumberswithoutRecurisve(8, 30);
 
-        return 0;
+        return dividend/divisor;
     }
+
 
 
     public static void main(String[] args) {
